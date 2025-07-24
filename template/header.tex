@@ -1,0 +1,52 @@
+% header.tex - Professional header template component
+% Author: SUMISEN98
+% Description: Modular header section for LaTeX resume using moderncv
+
+% Document class and style configuration
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\usepackage[scale=0.75]{geometry}
+\usepackage{enumitem}
+
+% Personal data template - customize these fields
+\name{[FIRST_NAME]}{[LAST_NAME]}
+\title{[PROFESSIONAL_TITLE]}
+\address{[CITY]}{[COUNTRY]}{}
+\phone[mobile]{[PHONE_NUMBER]}
+\email{[EMAIL_ADDRESS]}
+\social[linkedin]{[LINKEDIN_USERNAME]}
+\social[github]{[GITHUB_USERNAME]}
+
+% Optional additional contact methods (uncomment as needed)
+% \phone[fixed]{[FIXED_PHONE]}
+% \phone[fax]{[FAX_NUMBER]}
+% \homepage{[WEBSITE_URL]}
+% \social[twitter]{[TWITTER_USERNAME]}
+% \social[skype]{[SKYPE_USERNAME]}
+% \photo[64pt][0.4pt]{[PHOTO_FILENAME]} % optional photo
+
+% Professional summary template
+% Use this section to highlight your key expertise and value proposition
+\newcommand{\professionalsummary}[1]{
+    \section{Professional Summary}
+    \cvitem{}{#1}
+}
+
+% Usage example:
+% \professionalsummary{Your professional summary goes here. Focus on key achievements, 
+% expertise areas, and value proposition. Keep it concise and impactful.}
+
+% Header styling customizations (optional)
+% Uncomment and modify these to customize the appearance
+
+% Custom color definitions
+% \definecolor{customblue}{RGB}{0,102,204}
+% \moderncvcolor{customblue}
+
+% Custom font settings
+% \renewcommand{\familydefault}{\sfdefault} % for sans serif
+% \renewcommand{\familydefault}{\rmdefault} % for serif
+
+% Custom spacing
+% \setlength{\hintscolumnwidth}{3cm} % width of the column with the dates

@@ -1,0 +1,91 @@
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.vrb
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.brf
+*.lol
+*.figlist
+*.makefile
+*.xdv
+
+# Bibliography files
+*.bib.bak
+*.bib.sav
+
+# Temporary files
+*~
+*.bak
+*.swp
+*.swo
+*#*
+.#*
+*.tmp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
+*.kate-swp
+
+# Compilation logs
+compile.log
+
+# Build directories
+build/
+dist/
+out/
+
+# Package manager files
+node_modules/
+*.lockb
+package-lock.json
+yarn.lock
+
+# Archive files (keep source, ignore compressed outputs for version control)
+*.tar
+*.tar.gz
+*.zip
+*.rar
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# Backup files created by text editors
+*.orig

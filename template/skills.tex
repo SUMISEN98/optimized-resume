@@ -1,0 +1,115 @@
+% skills.tex - Technical skills section template component
+% Author: SUMISEN98
+% Description: Modular skills section for showcasing technical expertise
+
+% Technical Skills Section Template
+\newcommand{\technicalskills}{
+    \section{Technical Skills}
+    
+    % Financial Systems & Platforms
+    \cvitem{Financial Systems}{
+        SWIFT WebAccess, 
+        EUCLID Integration, 
+        Euroclear EasyWay®, 
+        Post-trade Services, 
+        Real-time Transaction Monitoring,
+        Settlement Systems,
+        Collateral Management
+    }
+    
+    % Web Technologies
+    \cvitem{Web Technologies}{
+        HTML5, CSS3, JavaScript (ES6+), 
+        React.js, Angular, Vue.js,
+        Node.js, Express.js,
+        RESTful APIs, GraphQL,
+        WebSocket, Server-Sent Events
+    }
+    
+    % Security & Authentication
+    \cvitem{Security \& Auth}{
+        HSM Certificates, 
+        User Access Management (UAM), 
+        Multi-factor Authentication (MFA),
+        SSL/TLS, OAuth 2.0, JWT,
+        API Security, Encryption
+    }
+    
+    % Development Platforms
+    \cvitem{Platforms}{
+        Browser-based Applications, 
+        Mobile-responsive Design, 
+        Cross-platform Development,
+        Progressive Web Apps (PWA),
+        Microservices Architecture
+    }
+    
+    % Database Technologies
+    \cvitem{Database}{
+        MySQL, PostgreSQL, MongoDB, 
+        Redis, Elasticsearch,
+        Database Design, Query Optimization,
+        Data Modeling, ETL Processes
+    }
+    
+    % Development Tools & Methods
+    \cvitem{Tools \& Methods}{
+        Git, Docker, Kubernetes,
+        Jenkins, CI/CD Pipelines,
+        Agile/Scrum, Test-driven Development,
+        Unit Testing, Integration Testing
+    }
+    
+    % Cloud & Infrastructure (optional)
+    \cvitem{Cloud \& Infrastructure}{
+        AWS (EC2, RDS, S3, Lambda),
+        Azure DevOps,
+        Monitoring \& Logging,
+        Performance Optimization
+    }
+}
+
+% Alternative compact skills format
+\newcommand{\compactskills}{
+    \section{Technical Skills}
+    \cvitem{}{
+        \textbf{Financial Systems:} SWIFT WebAccess, EUCLID, EasyWay®, Post-trade Services \\
+        \textbf{Web Technologies:} JavaScript, React, Angular, Node.js, HTML5, CSS3 \\
+        \textbf{Security:} HSM Certificates, UAM, MFA, SSL/TLS, API Security \\
+        \textbf{Database:} MySQL, PostgreSQL, MongoDB, Redis \\
+        \textbf{Tools:} Git, Docker, Jenkins, Agile/Scrum, TDD
+    }
+}
+
+% Skills with proficiency levels
+\newcommand{\skillswithlevels}{
+    \section{Technical Skills}
+    
+    \subsection{Expert Level}
+    \cvitem{}{JavaScript, React.js, Node.js, SWIFT Integration, Real-time Systems}
+    
+    \subsection{Advanced Level}
+    \cvitem{}{Angular, RESTful APIs, MySQL, Git, Agile Development}
+    
+    \subsection{Intermediate Level}
+    \cvitem{}{Docker, MongoDB, AWS, Test-driven Development}
+}
+
+% Custom skill item macro for consistent formatting
+\newcommand{\skillitem}[2]{
+    \cvitem{\textbf{#1}}{#2}
+}
+
+% Usage examples:
+% For standard skills layout:
+% \technicalskills
+
+% For compact layout:
+% \compactskills
+
+% For skills with proficiency levels:
+% \skillswithlevels
+
+% For custom skill items:
+% \skillitem{Programming Languages}{JavaScript, Python, Java, C++}
+% \skillitem{Frameworks}{React, Angular, Express.js, Spring Boot}

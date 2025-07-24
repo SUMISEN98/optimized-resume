@@ -1,0 +1,138 @@
+% experience.tex - Professional experience section template component
+% Author: SUMISEN98
+% Description: Modular experience section with templates for different role types
+
+% Professional Experience Section Template
+\newcommand{\professionalexperience}{
+    \section{Professional Experience}
+    
+    % Current/Recent Position Template
+    \cventry{[START_YEAR]--Present}{[POSITION_TITLE]}{[COMPANY_NAME]}{[LOCATION]}{}
+    {
+    \begin{itemize}[leftmargin=*]
+    \item [ACHIEVEMENT_WITH_METRICS] - Focus on quantifiable results
+    \item [TECHNICAL_IMPLEMENTATION] - Highlight technical skills used
+    \item [PROCESS_IMPROVEMENT] - Show impact on efficiency/quality
+    \item [COLLABORATION] - Demonstrate teamwork and leadership
+    \item [INNOVATION] - Showcase problem-solving and innovation
+    \end{itemize}
+    }
+    
+    % Previous Position Template
+    \cventry{[START_YEAR]--[END_YEAR]}{[POSITION_TITLE]}{[COMPANY_NAME]}{[LOCATION]}{}
+    {
+    \begin{itemize}[leftmargin=*]
+    \item [ACHIEVEMENT_WITH_METRICS]
+    \item [TECHNICAL_IMPLEMENTATION]
+    \item [PROCESS_IMPROVEMENT]
+    \item [COLLABORATION]
+    \end{itemize}
+    }
+}
+
+% Senior Software Engineer Template (Financial Technology Focus)
+\newcommand{\seniorfinanceengineer}[5]{
+    \cventry{#1}{Senior Software Engineer - #2}{#3}{#4}{}
+    {
+    \begin{itemize}[leftmargin=*]
+    \item Developed and maintained #2 platform serving #5 clients globally
+    \item Implemented real-time monitoring systems with 99.9\% uptime
+    \item Integrated financial APIs and third-party services
+    \item Built responsive web interfaces for mobile and desktop platforms
+    \item Enhanced security protocols and user authentication systems
+    \item Optimized system performance and reduced processing time
+    \item Collaborated with cross-functional teams for seamless delivery
+    \end{itemize}
+    }
+}
+
+% Full Stack Developer Template
+\newcommand{\fullstackdeveloper}[4]{
+    \cventry{#1}{Full Stack Developer}{#2}{#3}{}
+    {
+    \begin{itemize}[leftmargin=*]
+    \item Designed and developed secure web applications for #4
+    \item Implemented user access management and role-based authentication
+    \item Created customizable dashboards with real-time data visualization
+    \item Developed RESTful APIs for backend services integration
+    \item Maintained high system availability through monitoring and optimization
+    \end{itemize}
+    }
+}
+
+% Software Developer Template (Entry to Mid-level)
+\newcommand{\softwaredeveloper}[3]{
+    \cventry{#1}{Software Developer}{#2}{#3}{}
+    {
+    \begin{itemize}[leftmargin=*]
+    \item Built responsive web applications using modern frameworks
+    \item Integrated third-party APIs and services
+    \item Implemented automated testing frameworks and CI/CD pipelines
+    \item Collaborated in Agile development environment
+    \item Participated in code reviews and knowledge sharing sessions
+    \end{itemize}
+    }
+}
+
+% Key Projects Section Template
+\newcommand{\keyprojects}{
+    \section{Key Projects}
+    
+    % Major Project Template
+    \cventry{}{[PROJECT_NAME]}{}{}{}
+    {
+    \begin{itemize}[leftmargin=*]
+    \item [PROJECT_DESCRIPTION_WITH_SCOPE]
+    \item [TECHNICAL_IMPLEMENTATION_DETAILS]
+    \item [CHALLENGES_OVERCOME]
+    \item [RESULTS_AND_IMPACT]
+    \end{itemize}
+    }
+}
+
+% Financial Technology Project Templates
+\newcommand{\easywayproject}{
+    \cventry{}{EasyWay Real-time Monitoring System}{}{}{}
+    {
+    \begin{itemize}[leftmargin=*]
+    \item Architected real-time transaction monitoring system processing millions of settlement instructions
+    \item Implemented WebSocket connections for instant updates and notifications
+    \item Designed user-friendly interface with quick navigation and action capabilities
+    \item Achieved 99.9\% system reliability with automated failover mechanisms
+    \end{itemize}
+    }
+}
+
+\newcommand{\swiftintegrationproject}{
+    \cventry{}{SWIFT Integration Platform}{}{}{}
+    {
+    \begin{itemize}[leftmargin=*]
+    \item Developed secure integration layer between EasyWay platform and SWIFT network
+    \item Implemented strong authentication using personal tokens and HSM-stored certificates
+    \item Created comprehensive audit trails for regulatory compliance and risk management
+    \item Reduced manual processing time by 50\% through automated workflow optimization
+    \end{itemize}
+    }
+}
+
+% Achievement bullet point templates with metrics
+\newcommand{\achievementmetrics}[3]{
+    \item #1 #2, #3
+}
+
+% Common achievement patterns:
+% \achievementmetrics{Improved system performance by}{25\%}{reducing response time from 2s to 1.5s}
+% \achievementmetrics{Increased user engagement by}{40\%}{through mobile-responsive interface design}
+% \achievementmetrics{Reduced processing time by}{35\%}{via SWIFT and EUCLID integration optimization}
+
+% Experience formatting macros
+\newcommand{\experiencestart}{\section{Professional Experience}}
+\newcommand{\projectsstart}{\section{Key Projects}}
+
+% Usage examples:
+% \professionalexperience
+% \seniorfinanceengineer{2021--Present}{EasyWay Platform}{Euroclear}{Mumbai}{500+ financial institutions}
+% \fullstackdeveloper{2019--2021}{Financial Services Firm}{Mumbai}{post-trade settlement}
+% \keyprojects
+% \easywayproject
+% \swiftintegrationproject
